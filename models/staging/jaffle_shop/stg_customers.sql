@@ -4,4 +4,4 @@ select
     first_name,
     last_name
 
-from dbt_Test.jaffle_shop_customers
+from {{source('dbt_Test','jaffle_shop_customers')}}

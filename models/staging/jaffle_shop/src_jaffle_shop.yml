@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+    - name: dbt_Test
+      database: sfeir-innovation
+      tables: 
+        - name: jaffle_shop_customers
+        - name: jaffle_shop_orders
