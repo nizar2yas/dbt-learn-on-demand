@@ -14,6 +14,10 @@ sources:
                 - not_null
                 - unique 
         - name: jaffle_shop_orders
+          oaded_at_field: _etl_loaded_at
+          freshness:
+          warn_after: {count: 1, period: hour}
+          error_after: {count: 2, period: hour}
           description: Raw orders data.
           columns:
            - name: id
